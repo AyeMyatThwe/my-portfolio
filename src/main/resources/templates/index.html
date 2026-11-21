@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Aye Myat Thwe — Software Engineering Student and aspiring full-stack developer.">
+    <meta name="theme-color" content="#07111f">
+    <title>Aye Myat Thwe | Software Engineer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<div class="page-noise" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Aye Myat Thwe home">
+            <span class="brand-mark">AM</span>
+            <span class="brand-text">Aye Myat Thwe</span>
+        </a>
+
+        <div class="nav-center" id="navMenu">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#journey">Journey</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="icon-button" id="themeToggle" type="button" aria-label="Switch color theme">
+                <span class="theme-icon">☾</span>
+            </button>
+            <a class="nav-cta" href="mailto:ayemyatthwe2022kpu@gmail.com">Let’s talk</a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero section-shell" id="home">
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-copy reveal">
+                <div class="availability">
+                    <span class="availability-dot"></span>
+                    Available for internship opportunities
+                </div>
+
+                <p class="hero-kicker">Software Engineering Student · Full-Stack Enthusiast</p>
+
+                <h1>
+                    I build thoughtful
+                    <span class="gradient-text">digital experiences</span>
+                    with clean code.
+                </h1>
+
+                <p class="hero-description">
+                    I’m <strong>Aye Myat Thwe</strong>, a Software Engineering student at UIT,
+                    Yangon. I enjoy creating reliable applications with Java, Spring Boot,
+                    React, Python, and modern databases.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        Explore my work
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="button button-ghost" th:href="@{/files/AMT_CV.pdf}" download>
+                        Download résumé
+                        <span aria-hidden="true">↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <div>
+                        <span class="meta-value">4+</span>
+                        <span class="meta-label">Academic projects</span>
+                    </div>
+                    <div>
+                        <span class="meta-value">10+</span>
+                        <span class="meta-label">Technologies</span>
+                    </div>
+                    <div>
+                        <span class="meta-value">2</span>
+                        <span class="meta-label">IT certifications</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal reveal-delay">
+                <div class="visual-card">
+                    <div class="visual-topbar">
+                        <div class="window-dots"><span></span><span></span><span></span></div>
+                        <span class="file-name">developer-profile.java</span>
+                    </div>
+
+                    <div class="code-card">
+                        <div class="code-line"><span class="line-number">01</span><span><b>public class</b> Developer {</span></div>
+                        <div class="code-line"><span class="line-number">02</span><span class="indent"><b>String</b> name = <em>"Aye Myat Thwe"</em>;</span></div>
+                        <div class="code-line"><span class="line-number">03</span><span class="indent"><b>String</b> role = <em>"Software Engineer"</em>;</span></div>
+                        <div class="code-line"><span class="line-number">04</span><span class="indent"><b>String[]</b> skills = {</span></div>
+                        <div class="code-line"><span class="line-number">05</span><span class="indent-2"><em>"Java"</em>, <em>"Spring Boot"</em>, <em>"React"</em>,</span></div>
+                        <div class="code-line"><span class="line-number">06</span><span class="indent-2"><em>"MySQL"</em>, <em>"MongoDB"</em></span></div>
+                        <div class="code-line"><span class="line-number">07</span><span class="indent">};</span></div>
+                        <div class="code-line"><span class="line-number">08</span><span class="indent"><b>boolean</b> readyToLearn = <strong>true</strong>;</span></div>
+                        <div class="code-line"><span class="line-number">09</span><span>}</span></div>
+                    </div>
+
+                    <div class="floating-badge badge-java">
+                        <span>☕</span> Java
+                    </div>
+                    <div class="floating-badge badge-spring">
+                        <span>⌁</span> Spring Boot
+                    </div>
+                    <div class="floating-badge badge-react">
+                        <span>✦</span> React
+                    </div>
+                </div>
+
+                <div class="location-chip">
+                    <span>⌖</span>
+                    Hlaing, Yangon
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-strip" aria-label="Technology highlights">
+            <div class="tech-track">
+                <span>Java</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>React</span><i>✦</i>
+                <span>TypeScript</span><i>✦</i><span>Python</span><i>✦</i><span>MySQL</span><i>✦</i>
+                <span>MongoDB</span><i>✦</i><span>Git</span><i>✦</i>
+                <span>Java</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>React</span><i>✦</i>
+                <span>TypeScript</span><i>✦</i><span>Python</span><i>✦</i><span>MySQL</span><i>✦</i>
+                <span>MongoDB</span><i>✦</i><span>Git</span><i>✦</i>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell about" id="about">
+        <div class="container about-grid">
+            <div class="section-heading reveal">
+                <p class="section-eyebrow"><span>01</span> About me</p>
+                <h2>Curious by nature.<br>Focused on impact.</h2>
+            </div>
+
+            <div class="about-content reveal">
+                <p class="about-lead">
+                    I’m developing a strong foundation in software engineering through
+                    academic study, project work, and continuous self-learning.
+                </p>
+
+                <div class="about-columns">
+                    <p>
+                        I enjoy understanding how systems work from interface to database.
+                        My experience includes desktop applications, full-stack web projects,
+                        REST API fundamentals, database design, testing, and software modeling.
+                    </p>
+                    <p>
+                        I bring analytical thinking, attention to detail, adaptability, and
+                        a collaborative mindset. My goal is to grow into a dependable software
+                        engineer who creates useful, maintainable products.
+                    </p>
+                </div>
+
+                <div class="profile-facts">
+                    <div class="fact">
+                        <span class="fact-icon">◉</span>
+                        <div><small>University</small><strong>UIT, Yangon</strong></div>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">◎</span>
+                        <div><small>Specialization</small><strong>Software Engineering</strong></div>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">◇</span>
+                        <div><small>Focus</small><strong>Full-Stack Development</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell skills" id="skills">
+        <div class="container">
+            <div class="section-heading horizontal reveal">
+                <div>
+                    <p class="section-eyebrow"><span>02</span> Capabilities</p>
+                    <h2>My technical toolkit</h2>
+                </div>
+                <p>
+                    A growing toolkit for designing, building, testing, and improving
+                    software applications.
+                </p>
+            </div>
+
+            <div class="skill-bento">
+                <article class="skill-card skill-card-large reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-icon">{"{ }"}</span>
+                        <span class="skill-index">01</span>
+                    </div>
+                    <h3>Programming & Backend</h3>
+                    <p>Building application logic, object-oriented systems, and server-side features.</p>
+                    <div class="skill-tags">
+                        <span>Java SE</span><span>Java EE</span><span>Spring Boot</span>
+                        <span>Python</span><span>PHP</span><span>C++</span><span>REST APIs</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-icon">◫</span>
+                        <span class="skill-index">02</span>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>Creating clean, responsive interfaces for modern web applications.</p>
+                    <div class="skill-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <span>React.js</span><span>TypeScript</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-icon">⌘</span>
+                        <span class="skill-index">03</span>
+                    </div>
+                    <h3>Data & Tools</h3>
+                    <p>Structuring information and working with collaborative development tools.</p>
+                    <div class="skill-tags">
+                        <span>MySQL</span><span>MongoDB</span><span>SQL</span>
+                        <span>Git</span><span>GitHub</span>
+                    </div>
+                </article>
+
+                <article class="skill-card skill-card-wide reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-icon">△</span>
+                        <span class="skill-index">04</span>
+                    </div>
+                    <div class="wide-card-content">
+                        <div>
+                            <h3>Software Engineering</h3>
+                            <p>Applying structured approaches from analysis to delivery.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>OOP</span><span>Data Structures</span><span>Algorithms</span>
+                            <span>SDLC</span><span>UML</span><span>ER Diagrams</span>
+                            <span>Use Cases</span><span>Testing & QA</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell projects" id="projects">
+        <div class="container">
+            <div class="section-heading horizontal reveal">
+                <div>
+                    <p class="section-eyebrow"><span>03</span> Selected work</p>
+                    <h2>Projects that shaped my skills</h2>
+                </div>
+                <p>Academic applications developed across desktop, web, backend, and database technologies.</p>
+            </div>
+
+            <div class="projects-list">
+                <article class="project-card reveal">
+                    <div class="project-preview preview-one">
+                        <div class="mock-window">
+                            <div class="mock-top"><span></span><span></span><span></span></div>
+                            <div class="task-ui">
+                                <div class="task-sidebar"></div>
+                                <div class="task-content">
+                                    <div class="mock-title"></div>
+                                    <div class="task-row"><i></i><b></b></div>
+                                    <div class="task-row"><i></i><b></b></div>
+                                    <div class="task-row"><i></i><b></b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-topline">
+                            <span>Desktop Application</span>
+                            <span>01</span>
+                        </div>
+                        <h3>Task Management System</h3>
+                        <p>
+                            A Java desktop application for creating, organizing, updating,
+                            and storing tasks with a MySQL database.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java</span><span>Java Swing</span><span>MySQL</span>
+                        </div>
+                        <a class="text-link disabled" href="#" aria-disabled="true">
+                            Repository coming soon <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-reverse reveal">
+                    <div class="project-preview preview-two">
+                        <div class="dashboard-ui">
+                            <div class="dash-sidebar">
+                                <div class="dash-logo"></div>
+                                <i></i><i></i><i></i><i></i>
+                            </div>
+                            <div class="dash-main">
+                                <div class="dash-header"></div>
+                                <div class="dash-stats"><b></b><b></b><b></b></div>
+                                <div class="dash-chart">
+                                    <span style="height:35%"></span><span style="height:55%"></span>
+                                    <span style="height:45%"></span><span style="height:75%"></span>
+                                    <span style="height:62%"></span><span style="height:88%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-topline">
+                            <span>Full-Stack Web App</span>
+                            <span>02</span>
+                        </div>
+                        <h3>Gym Management System</h3>
+                        <p>
+                            A full-stack management platform using Spring Boot, React.js,
+                            and MySQL to organize gym-related data and workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span><span>React.js</span><span>MySQL</span>
+                        </div>
+                        <a class="text-link disabled" href="#" aria-disabled="true">
+                            Repository coming soon <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-preview preview-three">
+                        <div class="journal-ui">
+                            <div class="journal-nav"></div>
+                            <div class="journal-page">
+                                <span class="journal-label"></span>
+                                <div class="journal-title"></div>
+                                <div class="journal-line"></div><div class="journal-line"></div>
+                                <div class="journal-line short"></div>
+                                <div class="journal-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-topline">
+                            <span>Web Application</span>
+                            <span>03</span>
+                        </div>
+                        <h3>Online Journal Writing Website</h3>
+                        <p>
+                            A PHP-based journal platform where users can create and manage
+                            personal writing through a database-backed web interface.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <span>PHP</span><span>MySQL</span>
+                        </div>
+                        <a class="text-link disabled" href="#" aria-disabled="true">
+                            Repository coming soon <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-reverse reveal">
+                    <div class="project-preview preview-four">
+                        <div class="course-ui">
+                            <div class="course-head"></div>
+                            <div class="course-grid">
+                                <div><i></i><b></b><span></span></div>
+                                <div><i></i><b></b><span></span></div>
+                                <div><i></i><b></b><span></span></div>
+                                <div><i></i><b></b><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-topline">
+                            <span>Database Application</span>
+                            <span>04</span>
+                        </div>
+                        <h3>Course Enrollment & Credit Management</h3>
+                        <p>
+                            A student-focused application for course enrollment and credit
+                            tracking using React, TypeScript, Python, and MongoDB.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span><span>TypeScript</span>
+                            <span>Python</span><span>MongoDB</span>
+                        </div>
+                        <a class="text-link disabled" href="#" aria-disabled="true">
+                            Repository coming soon <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell journey" id="journey">
+        <div class="container journey-grid">
+            <div class="section-heading reveal">
+                <p class="section-eyebrow"><span>04</span> My journey</p>
+                <h2>Education, certifications & languages</h2>
+                <p class="journey-intro">
+                    Building professional readiness through academic learning,
+                    qualifications, and communication skills.
+                </p>
+            </div>
+
+            <div class="timeline reveal">
+                <article class="timeline-item">
+                    <div class="timeline-marker">01</div>
+                    <div class="timeline-content">
+                        <span class="timeline-label">Education</span>
+                        <h3>University of Information Technology (UIT), Yangon</h3>
+                        <p>B.C.Sc. specializing in Software Engineering</p>
+                        <div class="mini-tags">
+                            <span>OOP</span><span>Algorithms</span><span>DBMS</span>
+                            <span>Web Development</span><span>Software Testing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker">02</div>
+                    <div class="timeline-content">
+                        <span class="timeline-label">Certifications</span>
+                        <h3>Professional IT Qualifications</h3>
+                        <ul>
+                            <li>Information Technology Passport (IP)</li>
+                            <li>Fundamental Information Technology Engineer (FE)</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker">03</div>
+                    <div class="timeline-content">
+                        <span class="timeline-label">Languages</span>
+                        <h3>Communication Skills</h3>
+                        <ul>
+                            <li><strong>Myanmar:</strong> Native</li>
+                            <li><strong>English:</strong> Intermediate (B1)</li>
+                            <li><strong>Japanese:</strong> Preparing for JLPT N3</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell contact" id="contact">
+        <div class="container contact-panel reveal">
+            <div class="contact-copy">
+                <p class="section-eyebrow light"><span>05</span> Contact</p>
+                <h2>Have an opportunity in mind?</h2>
+                <p>
+                    I’m ready to learn, contribute, and grow with a collaborative
+                    software engineering team.
+                </p>
+
+                <a class="button button-light" href="mailto:ayemyatthwe2022kpu@gmail.com">
+                    Start a conversation <span>↗</span>
+                </a>
+            </div>
+
+            <div class="contact-details">
+                <a href="mailto:ayemyatthwe2022kpu@gmail.com">
+                    <span>Email</span>
+                    <strong>ayemyatthwe2022kpu@gmail.com</strong>
+                    <i>↗</i>
+                </a>
+                <a href="tel:+959891136545">
+                    <span>Phone</span>
+                    <strong>09-891136545</strong>
+                    <i>↗</i>
+                </a>
+                <a href="https://www.linkedin.com/in/aye-myat-thwe-2b1094422"
+                   target="_blank" rel="noreferrer">
+                    <span>LinkedIn</span>
+                    <strong>Connect professionally</strong>
+                    <i>↗</i>
+                </a>
+                <div>
+                    <span>Location</span>
+                    <strong>Hlaing, Yangon</strong>
+                    <i>⌖</i>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <a class="brand footer-brand" href="#home">
+                <span class="brand-mark">AM</span>
+                <span class="brand-text">Aye Myat Thwe</span>
+            </a>
+            <p>Designed and developed with Java Spring Boot.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#projects">Projects</a>
+            <a href="mailto:ayemyatthwe2022kpu@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/aye-myat-thwe-2b1094422"
+               target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <p class="copyright">© <span id="year"></span> All rights reserved.</p>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
